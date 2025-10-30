@@ -65,7 +65,7 @@ export default function TableBookingPage() {
       toast.success("Booking submitted! We'll confirm shortly.");
       // Reset form
       setStep(1);
-      setSelectedDate(undefined);
+      setSelectedDate(null);
       setTimeSlot("");
       setGuestCount(null);
       setName("");
