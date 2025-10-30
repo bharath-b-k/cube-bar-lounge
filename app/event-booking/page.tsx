@@ -47,10 +47,10 @@ export default function EventBookingPage() {
     );
   }
   function next() {
-    setStep((s) => Math.min((s + 1) as Step, 4 as Step));
+    setStep((s) => (s === 4 ? 4 : ((s + 1) as Step)));
   }
   function back() {
-    setStep((s) => Math.max((s - 1) as Step, 1 as Step));
+    setStep((s) => (s === 1 ? 1 : ((s - 1) as Step)));
   }
 
   async function onSubmit() {
