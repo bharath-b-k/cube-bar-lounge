@@ -80,7 +80,7 @@ export default function EventBookingPage() {
       // Reset form
       setStep(1);
       setEventType("");
-      setEventDate(undefined);
+      setEventDate(null);
       setDuration(null);
       setGuestCount(20);
       setAddOns([]);
